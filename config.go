@@ -24,6 +24,7 @@ type config struct {
 		MitigatedByNetworkEnv  bool `json:"mitigatedByNetworkEnv"`
 		ReviewedNoActionTaken  bool `json:"reviewedNoActionTaken"`
 		RemediatedByUser       bool `json:"remediatedByUser"`
+		ReportedToLibraryMaintainer	bool `json:"reportedToLibraryMaintainer"`
 	} `json:"targetMitigations"`
 
 	CommentText struct {
@@ -90,7 +91,8 @@ func parseConfig() config {
 		config.TargetMitigations.MitigationByOSEnv == false &&
 		config.TargetMitigations.MitigatedByNetworkEnv == false &&
 		config.TargetMitigations.ReviewedNoActionTaken == false &&
-		config.TargetMitigations.RemediatedByUser == false {
+		config.TargetMitigations.RemediatedByUser == false &&
+		config.TargetMitigations.ReportedToLibraryMaintainer == false {
 		log.Fatal("at least one target mitigation must be set to true")
 	}
 
