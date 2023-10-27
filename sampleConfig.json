@@ -1,6 +1,6 @@
 {
   "auth": {
-    "credsFile": "/Users/bpitta/.veracode/credentials"
+    "credsFile": "/Users/bhalpern/.veracode/credentials"
   },
   "mode":{
     "logOnly": true,
@@ -8,11 +8,12 @@
   },
   "targetMitigations": {
     "potentialFalsePositive": false,
-    "mitigatedByDesign": false,
-    "mitigationByOSEnv": false,
-    "mitigatedByNetworkEnv": false,
+    "mitigatedByDesign": true,
+    "mitigationByOSEnv": true,
+    "mitigatedByNetworkEnv": true,
     "reviewedNoActionTaken" : true,
-    "remediatedByUser": false
+    "remediatedByUser": false,
+    "reportedToLibraryMaintainer": true
   },
   "commentText": {
     "requireCommentText": true,
@@ -27,7 +28,7 @@
     "dateOfMitigationApproval": true,
     "specificDate": false,
     "date":"",
-    "daysToExpire": 90,
+    "daysToExpire": 5,
     "rejectionComment": "Expired automatically by utility."
   }
 
