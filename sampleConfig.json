@@ -13,7 +13,8 @@
     "mitigatedByNetworkEnv": true,
     "reviewedNoActionTaken" : true,
     "remediatedByUser": false,
-    "reportedToLibraryMaintainer": true
+    "reportedToLibraryMaintainer": true,
+    "acceptTheRisk": true,
   },
   "commentText": {
     "requireCommentText": true,
