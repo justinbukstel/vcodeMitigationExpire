@@ -25,7 +25,7 @@ type config struct {
 		ReviewedNoActionTaken  bool `json:"reviewedNoActionTaken"`
 		RemediatedByUser       bool `json:"remediatedByUser"`
 		ReportedToLibraryMaintainer	bool `json:"reportedToLibraryMaintainer"`
-		AcceptTheRisk      bool 'json:"acceptTheRisk"
+		AcceptTheRisk      bool 'json:"acceptTheRisk"'
 	} `json:"targetMitigations"`
 
 	CommentText struct {
