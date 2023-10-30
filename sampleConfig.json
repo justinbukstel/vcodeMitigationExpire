@@ -1,6 +1,6 @@
 {
   "auth": {
-    "credsFile": "/Users/bhalpern/.veracode/credentials"
+    "credsFile": "/Users/justinbukstel/.veracode/credentials"
   },
   "mode":{
     "logOnly": true,
