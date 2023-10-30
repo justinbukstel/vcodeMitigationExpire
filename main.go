@@ -102,7 +102,7 @@ func main() {
 						(recentProposal.Action == "Reviewed - No Action Taken" && config.TargetMitigations.ReviewedNoActionTaken == true) ||
 						(recentProposal.Action == "Remediated by User" && config.TargetMitigations.RemediatedByUser == true) ||
 						(recentProposal.Action == "Reported to Library Maintainer" && config.TargetMitigations.ReportedToLibraryMaintainer == true) ||
-					        (reventProposal.Action == "Accept the risk" && config.TargetMitigations.AcceptTheRisk == true) {
+					        (recentProposal.Action == "Accept the risk" && config.TargetMitigations.AcceptTheRisk == true) {
 						// CHECK FOR INCLUDING COMMENT TEXT
 						if (config.CommentText.RequireCommentText == true && strings.Contains(recentApproval.Description, config.CommentText.Text)) ||
 							(config.CommentText.RequireCommentText == false) {
